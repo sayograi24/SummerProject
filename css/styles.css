@@ -1,0 +1,795 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#certain-page{
+    color: darkorange;
+}
+.next-page:hover{
+    color: darkorange;
+    transition: 0.3s;
+}
+header {
+    background-color: #f71500;
+    color: white;
+    padding: 1em 0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    max-width: 100px;
+    margin-right: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 2em 0;
+}
+
+.intro {
+    padding: 2em 0;
+    background-color: #ffffff;
+}
+
+.intro-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.intro-image-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 400px; /* Ensure a minimum height */
+}
+
+.intro-image {
+    flex: 1;
+}
+
+.intro-image img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.intro-text {
+    flex: 1;
+    text-align: left;
+    padding-left: 2em; /* Space between image and text */
+}
+
+.intro h2 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.intro p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.cta-button, .next-button, .prev-button {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background-color: #e53935;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+    margin: 0.5em;
+    font-size: 1em;
+}
+
+.cta-button:hover, .next-button:hover, .prev-button:hover {
+    background-color: #d32f2f;
+    transform: scale(1.1);
+}
+
+.nav-button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    color: #e53935;
+    transition: color 0.3s ease;
+}
+
+.nav-button:hover {
+    transform: scale(1.1);
+    color: #ffffff;
+}
+
+.pagination {
+    text-align: center;
+    padding-top: 1em;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.info, .how-it-works, .testimonials, .upcoming-events, .news, .volunteer-stories {
+    background-color: white;
+    padding: 2em 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 2em;
+}
+
+.info h2, .how-it-works h2, .testimonials h2, .upcoming-events h2, .news h2, .volunteer-stories h2 {
+    color: #d32f2f;
+}
+
+.info .benefits {
+    list-style-type: none;
+    padding: 0;
+}
+
+.info .benefits li {
+    margin-bottom: 0.5em;
+    font-size: 1.1em;
+}
+
+.info .benefits li i {
+    margin-right: 0.5em;
+    color: #e53935;
+}
+
+.how-it-works .steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.how-it-works .step {
+    flex: 1 1 200px;
+    background-color: #f9f9f9;
+    padding: 1em;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.how-it-works .step h3 {
+    color: #e53935;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.how-it-works .step p {
+    color: #666;
+}
+
+.testimonials .testimonial {
+    background-color: #f9f9f9;
+    padding: 1em;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.testimonials .testimonial p {
+    font-style: italic;
+    color: #666;
+}
+
+.testimonials .testimonial h4 {
+    text-align: right;
+    color: #333;
+}
+
+.upcoming-events .event, .news .news-item, .volunteer-stories .story {
+    margin-bottom: 1em;
+}
+
+footer {
+    background-color: #d32f2f;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+input, textarea, button {
+    margin-bottom: 1em;
+    padding: 0.75em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #e53935;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05);
+}
+.contact .container{
+    width: 45%;
+}
+.contact .container #messege{
+    width: 50%;
+}
+footer #footerlink{
+    text-decoration: none;
+    color: white;
+}
+footer #footerlink :hover{
+    color:orange;
+    transition:ease-in-out 0.3s;
+}
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #e53935;
+    color: white;
+    padding: 1em 0;
+    border-bottom: 4px solid #c62828;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    max-width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 1.5em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#certain-page {
+    color: #ffeb3b; /* Highlight color for current page */
+}
+
+.next-page:hover {
+    color: #ffeb3b; /* Highlight color for other pages */
+    transition: color 0.3s ease;
+}
+
+/* Main Section Styling */
+main {
+    padding: 2em 1em;
+}
+
+/* Intro Section Styling */
+.intro {
+    position: relative;
+    text-align: center;
+}
+
+.intro-image-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-image {
+    flex: 1;
+}
+
+.intro-image img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.intro-text {
+    flex: 1;
+    padding: 1em;
+}
+
+.intro-text h2 {
+    font-size: 2em;
+    color: #e53935;
+}
+
+.intro-text p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.cta-button {
+    background-color: #e53935;
+    color: white;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #c62828;
+}
+
+/* Info Section Styling */
+.info {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.info h2 {
+    color: #e53935;
+}
+
+.benefits {
+    list-style: none;
+    padding: 0;
+}
+
+.benefits li {
+    margin-bottom: 0.5em;
+}
+
+/* How It Works Section Styling */
+.how-it-works {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.how-it-works .steps {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.step {
+    flex: 1;
+    margin: 1em;
+}
+
+.step h3 {
+    color: #e53935;
+}
+
+/* Testimonials Section Styling */
+.testimonials {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial {
+    margin-bottom: 1.5em;
+}
+
+.testimonial p {
+    font-style: italic;
+}
+
+.testimonial h4 {
+    text-align: right;
+    color: #666;
+}
+
+/* Upcoming Events Section Styling */
+.upcoming-events {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.event {
+    margin-bottom: 1.5em;
+}
+
+/* News Section Styling */
+.news {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.news-item {
+    margin-bottom: 1.5em;
+}
+
+/* Volunteer Stories Section Styling */
+.volunteer-stories {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.story {
+    margin-bottom: 1.5em;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #e53935;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+#footerlink {
+    color: white;
+    text-decoration: none;
+}
+
+#footerlink:hover {
+    text-decoration: underline;
+}
+
+/* Pagination Dots */
+.pagination {
+    text-align: center;
+    margin: 1em 0;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #333;
+}
+
+/* Forms Styling */
+form {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2em;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #e53935;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #c62828;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 1em;
+    }
+
+    nav ul li {
+        margin-bottom: 0.5em;
+    }
+
+    .intro-image-text {
+        flex-direction: column;
+    }
+
+    .intro-image img {
+        max-height: 200px;
+    }
+}
+/* General Styling for About Us Page */
+.about {
+    background-color: #f9f9f9; /* Light, neutral background for readability */
+    padding: 60px 30px; /* Generous padding for a spacious feel */
+    margin: 30px auto; /* Center the section */
+    border-radius: 12px; /* Rounded corners for a modern look */
+    max-width: 1200px; /* Max width for larger screens */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+/* Hero Section */
+.hero {
+    position: relative; /* Relative positioning for overlay */
+    background: url('Image/hero-bg.jpg') no-repeat center center/cover; /* Background image */
+    color: #fff; /* White text color */
+    padding: 80px 30px; /* Padding for hero section */
+    text-align: center; /* Center text in hero section */
+    border-radius: 12px; /* Rounded corners */
+    margin-bottom: 60px; /* Space below hero section */
+    overflow: hidden; /* Ensure overlay doesn't overflow */
+}
+
+.hero::before {
+    content: ''; /* Required for pseudo-element */
+    position: absolute; /* Absolute positioning */
+    top: 0; /* Align to top */
+    left: 0; /* Align to left */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background: rgb(237, 237, 237); /* Semi-transparent black overlay */
+    z-index: 1; /* Place overlay above background image */
+}
+
+.hero .hero-content {
+    position: relative; /* Ensure content is above the overlay */
+    z-index: 2; /* Place content above overlay */
+}
+
+.hero h2 {
+    font-size: 3em; /* Larger font size for hero heading */
+    margin-bottom: 20px; /* Space below heading */
+    color: black;
+}
+
+.hero p {
+    font-size: 1.5em; /* Larger font size for hero text */
+    margin-bottom: 30px; /* Space below text */
+    color: black;
+}
+
+.hero .cta-button {
+    font-size: 1.3em; /* Larger font size for button */
+    padding: 15px 30px; /* Padding for button */
+    border-radius: 8px; /* Rounded corners for button */
+}
+
+/* Team Member Profiles */
+.team {
+    display: flex; /* Flexbox for team layout */
+    justify-content: space-between; /* Space between team members */
+    gap: 20px; /* Gap between items */
+    margin-bottom: 40px; /* Space below team section */
+}
+
+.team-member {
+    background-color: #fff; /* White background for team member boxes */
+    padding: 20px; /* Padding inside boxes */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Shadow for depth */
+    text-align: center; /* Center text in team boxes */
+    flex: 1; /* Flex-grow for equal sizing */
+}
+
+.team-member img {
+    border-radius: 50%; /* Round images for team photos */
+    width: 120px; /* Fixed width */
+    height: 120px; /* Fixed height */
+    object-fit: cover; /* Cover object fit */
+    margin-bottom: 15px; /* Space below image */
+}
+
+.team-member h3 {
+    font-size: 1.5em; /* Larger font size for names */
+    margin-bottom: 10px; /* Space below name */
+}
+
+.team-member p {
+    font-size: 1.1em; /* Slightly larger font size for roles */
+}
+
+/* General Styling for About Us Page (continued) */
+.about h2 {
+    font-size: 2.4em; /* Larger headings for better visibility */
+    margin-bottom: 20px; /* Spacing below headings */
+    color: #d23f57; /* Consistent accent color */
+    font-weight: 600; /* Bold for emphasis */
+    border-bottom: 3px solid #d23f57; /* Underline headings */
+    padding-bottom: 12px; /* Padding below headings */
+}
+
+.about p {
+    font-size: 1.15em; /* Slightly larger text for readability */
+    line-height: 1.7; /* Increased line height for easier reading */
+    margin-bottom: 20px; /* Spacing below paragraphs */
+    color: #333; /* Darker text color */
+    text-align: justify; /* Justify text for a clean look */
+}
+
+.about ul {
+    list-style-type: disc; /* Bullet points for lists */
+    margin-left: 40px; /* Indent list items */
+    margin-bottom: 20px; /* Spacing below lists */
+}
+
+.about li {
+    font-size: 1.15em; /* Larger font size for list items */
+    margin-bottom: 15px; /* Spacing between list items */
+    color: #555; /* Slightly lighter text color */
+}
+
+.about blockquote {
+    border-left: 6px solid #d23f57; /* Distinct border for blockquotes */
+    padding-left: 20px; /* Padding inside blockquote */
+    margin: 30px 0; /* Spacing around blockquotes */
+    font-style: italic; /* Italicized text */
+    background-color: #fff; /* White background for blockquotes */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside blockquote */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* Shadow for emphasis */
+    font-size: 1.15em; /* Slightly larger font size */
+    color: #333; /* Dark text color */
+}
+
+.about blockquote p {
+    margin: 0; /* Remove margin inside blockquote */
+    color: #333; /* Dark text color */
+}
+
+.container {
+    max-width: 1200px; /* Limit container width */
+    margin: 0 auto; /* Center container */
+    padding: 0 20px; /* Padding for spacing */
+}
+
+/* Call-to-Action Button Styling */
+.cta-button {
+    display: inline-block; /* Make button inline */
+    background-color: #d23f57; /* Consistent button color */
+    color: #fff; /* White text */
+    padding: 12px 25px; /* Padding for button */
+    border-radius: 6px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.2em; /* Larger font size */
+    font-weight: 600; /* Bold text */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+    margin-top: 20px; /* Spacing above button */
+}
+
+.cta-button:hover {
+    background-color: #a22a42; /* Darker color on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.cta-button:focus {
+    outline: 2px solid #a22a42; /* Outline on focus */
+    outline-offset: 4px; /* Offset for focus outline */
+}
+
+/* Optional: Responsive adjustments */
+@media (max-width: 768px) {
+    .about {
+        padding: 30px 15px; /* Adjust padding on smaller screens */
+    }
+
+    .about h2 {
+        font-size: 1.8em; /* Adjust heading size */
+    }
+
+    .about p,
+    .about li {
+        font-size: 1em; /* Adjust text size */
+    }
+
+    .about ul {
+        margin-left: 20px; /* Adjust list indentation */
+    }
+
+    .team {
+        flex-direction: column; /* Stack team members vertically on small screens */
+        align-items: center; /* Center align team members */
+    }
+
+    .team-member {
+        margin-bottom: 30px; /* Space below team members */
+    }
+}

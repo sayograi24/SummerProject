@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="Image/logo.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Bank Donation</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo-container">
+                <a href="index.html"><img src="Image/logo.png" alt="Blood Bank Donation Logo" class="logo"></a>
+            </div>`
+            <h1>Blood Bank Donation</h1>
+            <nav>
+                <ul>
+                    <li><a id="certain-page" href="index.html">Home</a></li>
+                    <li><a class="next-page" href="about.html">About Us</a></li>
+                    <li><a class="next-page" href="donate.html">Donate Blood</a></li>
+                    <li><a class="next-page" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="intro">
+            <div class="container intro-content">
+                <button class="nav-button prev-button" onclick="prevImage()">&#8249;</button>
+                <div class="intro-image-text">
+                    <div class="intro-image">
+                        <img id="intro-image" src="Image/Freedom.png" alt="Blood Donation Event">
+                    </div>
+                    <div class="intro-text">
+                        <h2 id="intro-title">Save a Life, Donate Blood</h2>
+                        <p id="intro-description">Join us in our mission to save lives by donating blood. Every drop counts.</p>
+                        <a id="intro-link" href="donate.html" class="cta-button">Donate Now</a>
+                    </div>
+                </div>
+                <button class="nav-button next-button" onclick="nextImage()">&#8250;</button>
+            </div>
+            <div class="pagination">
+                <span class="dot" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span> 
+            </div>
+        </section>
+        <section class="info">
+            <div class="container">
+                <h2>Why Donate Blood?</h2>
+                <p>Blood donation is a simple, safe, and quick process that can make a big difference in the lives of patients in need.</p>
+                <ul class="benefits">
+                    <li><i class="fa fa-heart"></i>Helps save lives</li>
+                    <li><i class="fa fa-check"></i>Improves overall health</li>
+                    <li><i class="fa fa-users"></i>Enhances community solidarity</li>
+                </ul>
+            </div>
+        </section>
+        <section class="how-it-works">
+            <div class="container">
+                <h2>How It Works</h2>
+                <div class="steps">
+                    <div class="step">
+                        <h3>1. Register</h3>
+                        <p>Sign up online to become a donor. It takes just a few minutes.</p>
+                    </div>
+                    <div class="step">
+                        <h3>2. Schedule</h3>
+                        <p>Choose a convenient time and location for your donation.</p>
+                    </div>
+                    <div class="step">
+                        <h3>3. Donate</h3>
+                        <p>Visit our donation center and give blood. The process is quick and easy.</p>
+                    </div>
+                    <div class="step">
+                        <h3>4. Save Lives</h3>
+                        <p>Your donation can help save up to three lives. Thank you for your support!</p>
+                    </div>
+                    <div class="step">
+                        <h3>5.  Lives</h3>
+                        <p>Your donation can help save up to three lives. Thank you for your support!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials">
+            <div class="container">
+                <h2>Testimonials</h2>
+                <div class="testimonial">
+                    <p>"Donating blood was a wonderful experience. Knowing that I helped save lives is incredibly rewarding."</p>
+                    <h4>- Kyoto, Donor</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"Receiving a blood donation during my surgery was life-saving. I am forever grateful to the donors."</p>
+                    <h4>- Apollo, Recipient</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"Don't smoke, Donate Blood."</p>
+                    <h4>- Shinigami</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"Blood donate garna chai free ma hunxa, blood lina jada mahango hunxa"</p>
+                    <h4>- Manoj Pandey</h4>
+                </div>
+                <div class="testimonial">
+                    <p>Donating blood makes your body light, feels healthy.</p>
+                    <h4>- Tikendra Rai</h4>
+                </div>
+                
+            </div>
+        </section>
+        <section class="upcoming-events">
+            <div class="container">
+                <h2>Upcoming Events</h2>
+                <div class="event">
+                    <h3>Blood Donation Camp</h3>
+                    <p>Date: July 30, 2024</p>
+                    <p>Location: Community Hall, City Center</p>
+                </div>
+                <div class="event">
+                    <h3>Health Check-up Camp</h3>
+                    <p>Date: August 15, 2024</p>
+                    <p>Location: Central Park</p>
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <div class="container">
+                <h2>News</h2>
+                <div class="news-item">
+                    <h3>New Blood Bank Center Opened</h3>
+                    <p>We are excited to announce the opening of a new blood bank center in the downtown area. This center will help us serve the community better.</p>
+                </div>
+                <div class="news-item">
+                    <h3>Annual Blood Donation Drive Success</h3>
+                    <p>Thanks to our generous donors, our annual blood donation drive was a great success. We collected over 500 units of blood.</p>
+                </div>
+            </div>
+        </section>
+        <section class="volunteer-stories">
+            <div class="container">
+                <h2>Volunteer Stories</h2>
+                <div class="story">
+                    <h3>Katuwal's Journey</h3>
+                    <p>Katuwal shares his experience of volunteering with the blood bank and how it has impacted his life.</p>
+                </div>
+                <div class="story">
+                    <h3>Pu's Experience</h3>
+                    <p>Pu talks about the joy of helping others and the sense of community she has found through volunteering.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <a href="index.html" id="footerlink"><p>Blood Bank Donation</p></a> 
+            <p>&copy; 2024 Blood Bank Donation. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        const images = [
+            {
+                src: "Image/Freedom.png",
+                title: "Save a Life, Donate Blood",
+                description: "Join us in our mission to save lives by donating blood. Every drop counts.",
+                link: "donate.html"
+            },
+            {
+                src: "Image/blooddonation.jpg",
+                title: "Operation Update: Karnali Earthquake",
+                description: "A 6.4 magnitude earthquake struck Jajarkot District on 3 November 2023 at 11:47 local time. The epicenter was located in...",
+                link: "donate.html"
+            },
+            {
+                src: "Image/blood-donation-nepal-programme-kathmandu-2-edited.jpg",
+                title: "People co-operating",
+                description: "All the people around are co-operating with the staff for donating blood for the needed people",
+                link: "donate.html"
+            },
+         
+        ];
+
+        let currentImageIndex = 0;
+
+        function updateContent() {
+            const image = document.getElementById('intro-image');
+            const title = document.getElementById('intro-title');
+            const description = document.getElementById('intro-description');
+            const link = document.getElementById('intro-link');
+
+            image.src = images[currentImageIndex].src;
+            title.textContent = images[currentImageIndex].title;
+            description.textContent = images[currentImageIndex].description;
+            link.href = images[currentImageIndex].link;
+
+            updateDots();
+        }
+
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            updateContent();
+        }
+
+        function prevImage() {
+            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+            updateContent();
+        }
+
+        function currentSlide(index) {
+            currentImageIndex = index;
+            updateContent();
+        }
+
+        function updateDots() {
+            const dots = document.querySelectorAll('.dot');
+            dots.forEach((dot, index) => {
+                dot.style.backgroundColor = index === currentImageIndex ? '#333' : '#ccc';
+            });
+        }
+    </script>
+</body>
+</html>

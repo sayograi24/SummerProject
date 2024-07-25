@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="Image/logo.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Blood - Blood Bank Donation</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo-container">
+                <a href="index.html"><img src="Image/logo.png" alt="Blood Bank Donation Logo" class="logo"></a>
+            </div>
+            <h1>Blood Bank Donation</h1>
+            <nav>
+                <ul>
+                    <li><a class="next-page" href="index.html">Home</a></li>
+                    <li><a class="next-page" href="about.html">About Us</a></li>
+                    <li><a id="certain-page" href="donate.html">Donate Blood</a></li>
+                    <li><a class="next-page" href="contact.html">Contact</a></li>
+                
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="donate">
+            <div class="container">
+                <h2>Eligibility Criteria</h2>
+                <ul type="none">
+                    <li>Be at least 17 years old</li>
+                    <br>
+                    <li>Weigh at least 110 lbs</li>
+                    <br>
+                    <li>Be in good health</li>
+                </ul>
+                <h2>Register as a Donor</h2>
+                <form action="register.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <button type="submit">Register</button>
+                </form>
+                <h2>Schedule an Appointment</h2>
+                <form action="schedule.php" method="post">
+                    <label for="date">Preferred Date:</label>
+                    <input type="date" id="date" name="date" required>
+                    <label for="time">Preferred Time:</label>
+                    <input type="time" id="time" name="time" required>
+                    <button type="submit">Schedule</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            
+            <p>&copy; 2024 Blood Bank Donation. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
