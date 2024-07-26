@@ -22,6 +22,7 @@ body {
 .next-page:hover{
     color: darkorange;
     transition: 0.3s;
+    text-decoration: none;
 }
 header {
     background-color: #f71500;
