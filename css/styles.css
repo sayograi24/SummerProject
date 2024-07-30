@@ -574,7 +574,16 @@ form button {
 form button:hover {
     background-color: #c62828;
 }
-
+p2{
+    font-weight: bold;
+}
+.name{
+    position: relative;
+    top: 1%;
+}
+#name1{
+    height: 50px;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
     .header-content {
