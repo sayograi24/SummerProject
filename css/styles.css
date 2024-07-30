@@ -54,6 +54,7 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+ 
 }
 
 main {
@@ -333,7 +334,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 #certain-page {
